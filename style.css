@@ -1,3 +1,26 @@
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color:white;
+    text-decoration: none;
+    padding: 0px;
+    display: block;
+    text-align: center;
+}
+.navbar li{
+    float: left;
+    margin: 20px;
+}
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%) ;
+    padding: 20px;
+}
 /* global styles */
 
 *{
@@ -171,51 +194,49 @@ h1{
     margin-inline: 10px;
 }
 
-.navbar{
+.navbar {
     display: flex;
+    justify-content: space-between; /* Space between logo and nav items */
     align-items: center;
-}
-
-.navigation{
-    display: flex;;
-    margin-right: 10px;
-    padding: 10px;
-    width: 80%;
-    display: inline-block;
-    border-radius: 5px;
-    max-height: 80px;
+    padding: 10px 20px;
     background-color: #525252;
 }
 
-.navbar ul{
-    list-style-type: none;
-    background-color: hsl(0, 0%, 25%);
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
+.navigation {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
-.navbar a{
-    color:white;
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: flex-end; /* Align nav items to the right */
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
     text-decoration: none;
-    padding: 0px;
+    padding: 10px 15px;
     display: block;
     text-align: center;
+    border-radius: 5px;
 }
 
-.navbar li{
-    float: left;
-    margin: 20px;
-}
-
-.navbar a:hover{
-    background-color: hsl(0, 0%, 10%) ;
-    padding: 15px;
+.navbar a:hover {
+    background-color: hsl(0, 0%, 10%);
 }
 
 .close-icon i {
-    font-size: 60px;
-    float: right;
+    font-size: 20px;
     cursor: pointer;
     color: white;
+    margin-left: auto;
 }
