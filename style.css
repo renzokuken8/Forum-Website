@@ -174,7 +174,7 @@ h1{
     }
     
     .subforum-icon img {
-        width: 150px;
+        width: 100px;
         height: auto;
         border-radius: 8px;
         box-shadow: 0 0 15px 5px rgba(255, 201, 53, 0.5);
@@ -196,7 +196,7 @@ h1{
 
 .navbar {
     display: flex;
-    justify-content: space-between; /* Space between logo and nav items */
+    justify-content: space-between; 
     align-items: center;
     padding: 10px 20px;
     background-color: #525252;
@@ -214,7 +214,7 @@ h1{
     margin: 0;
     padding: 0;
     flex-grow: 1;
-    justify-content: flex-end; /* Align nav items to the right */
+    justify-content: flex-end;
 }
 
 .nav-list li {
@@ -235,8 +235,34 @@ h1{
 }
 
 .close-icon i {
-    font-size: 20px;
+    font-size: 35px;
     cursor: pointer;
     color: white;
     margin-left: auto;
+}
+
+/* navbar for phone screens */
+@media screen and (max-width: 768px) {
+    .navigation {
+        max-height: auto;
+    }
+
+    .close-icon i {
+        font-size: 50px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-list li {
+        margin: 5px 0;
+    }
+    
 }
