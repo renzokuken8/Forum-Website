@@ -283,3 +283,69 @@ h1{
     text-align: right;
     padding: 10px;
 }
+
+/*######################################################################*/
+/*PostPage.html*/
+
+.table-head{
+    display: flex;
+}
+
+.table-head div{
+    padding: 5px;
+    margin: 2px;
+    background-color: #525252;
+    font-weight: bold;
+}
+
+.table-head .status{
+    flex: 5%;
+}
+
+.table-head .subjects{
+    flex: 70%;
+}
+
+.table-head .replies{
+    flex: 15%;
+}  
+
+.table-head .last-reply{
+    flex: 15%;
+}   
+
+/* table body */
+.table-row{
+    display: flex;
+    margin: 2px;
+    min-height: 30px;
+}
+
+.table-row .status, .table-row .subjects, .table-row .replies, .table-row .last-reply{
+    padding: 5px;
+    margin: 2px;
+    font-style: italic;
+    line-height: 1.5;
+    background-color: #525252;
+}
+
+.table-row .status{
+    flex: 5%;
+    font-size: 100px;
+    text-align: center;
+}
+
+.table-row .subjects{
+    flex: 70%;
+    font-size: 20px;
+}
+
+.table-row .replies{
+    flex: 15%;
+    font-size: 15px;
+}
+
+.table-row .last-reply{
+    flex: 15%;
+    font-size: 15px;
+}
