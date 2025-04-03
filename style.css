@@ -105,16 +105,6 @@ h1{
         align-items: center;
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    right: 10px;
-    width: 100%;
-    color: #ffffff;
-    text-align: right;
-    padding: 10px;
-}
-
 .subforum-icon img {
     width: 100px;
     height: auto; /* keep aspect ratio */
@@ -199,6 +189,7 @@ h1{
     justify-content: space-between; 
     align-items: center;
     padding: 10px 20px;
+    border-radius: 5px;
     background-color: #525252;
 }
 
@@ -264,5 +255,31 @@ h1{
     .nav-list li {
         margin: 5px 0;
     }
-    
+}
+
+/*Forum info*/
+
+.chart{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.forum-info {
+    background-color: #525252;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 -2px 5px rgba(15, 15, 15, 0.5);
+}
+
+/*footer*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    margin: 10px;
+    width: 100%;
+    color: #ffffff;
+    text-align: right;
+    padding: 10px;
 }
