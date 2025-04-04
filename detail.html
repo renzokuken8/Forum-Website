@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navigation">
+                <a href="home.html" class="logo">Logo</a>
+                <ul class="nav-list">
+                    <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="PostPage.html">Post</a></li>
+                    <li><input type="text" placeholder="Search..."></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <body class="PostPage">
+        <div class="container">
+
+            <!--navigation-->
+            <div class="navigate">
+                <span><a href="#">Forum Name - Forums</a> >> <a href="#">Random Topic</a>>> <a href="#">Random Post</a></span>
+            </div>
+
+            <div class="topic-container">
+                <div class="head">
+                    <div class="authors">Author</div>
+                    <div class="content">Topic: Post Title</div>
+                </div>
+
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="#">Username</a></div>
+                        <div>Role</div>
+                        <img src="e92881ef33d80862f4437cbfd396325e1b2957b3_2_690x484.jpeg" alt="">
+                        <div>Posts: <u>69</u></div>
+                        <div>Points <u>5290</u></div>
+                        <div>Joined: <u>Apr 2 2025</u></div>
+                    </div>
+
+                    <div class="content">
+                        Random post content
+                        <br> More random content
+                        <br><br>
+                        Nothing else ...
+                        <br><br>
+                        <hr>
+                        Username
+                            <div class="comment">
+                                <button onclick="showComments()">Comment</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--comment input-->
+            <div class="comment-area hide" id="comment-area" style="display: none;">
+                <textarea name="comment" placeholder="type comment ..."></textarea>
+                <input type="submit" value="Post Comment">
+            </div>
+
+            <!--show comments-->
+            <div class="co-container">
+                <div class="head">
+                    <div class="authors">Author</div>
+                    <div class="content">Comments</div>
+                </div>
+
+                <div class="body">
+                    <div class="authors">
+                        <div class="AnotherUser"><a href="#">Username</a></div>
+                        <div>Role</div>
+                        <img src="e92881ef33d80862f4437cbfd396325e1b2957b3_2_690x484.jpeg" alt="">
+                        <div>Posts: <u>69</u></div>
+                        <div>Points <u>5290</u></div>
+                        <div>Joined: <u>Apr 2 2025</u></div>
+                    </div>
+
+                    <div class="content">
+                        Random reply content
+                        <br> More random content
+                        <br><br>
+                        Nothing else ...
+                        <br>
+                            <div class="comment">
+                                <button onclick="showReply()">Reply</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--reply input-->
+                <div class="comment-box comment-area hide" id="reply-area" style="display: none;">
+                    <textarea name="reply" placeholder="type reply ..."></textarea>
+                    <input type="submit" value="Post Reply">
+                  </div>
+
+        </div>
+
+    </div>
+
+           
+
+<footer>
+    © 2025 oceancow91 - All rights reserved - 
+     <a href="#">Privacy Policy</a> 
+    - <a href="#">Terms of Service</a>  
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
