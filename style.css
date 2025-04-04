@@ -288,7 +288,8 @@ h1{
 
 body.PostPage .container {
     margin: 0px;
-    padding-left: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .table-head{
@@ -353,4 +354,135 @@ body.PostPage .container {
 .table-row .last-reply{
     flex: 15%;
     font-size: 15px;
+}
+
+/*Pagination*/
+.pagination {
+    font-size: 15px;
+    padding: 20px;
+}
+
+.pagination a {
+    color: #ffffff;
+    padding: 5px 10px;
+    margin-inline: 5px;
+    border: solid 0.5px #ffffff;
+}
+
+.pagination a:hover {
+    opacity: 0.5;
+}
+
+/*Navigation*/
+.navigate {
+    margin-block: 20px;
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.navigate a{
+    color: #ca5757;
+}
+
+.navigate a:hover{
+    color: #fff;
+    font-weight: bolder;
+}
+
+/*note*/
+
+.note{
+    background-color: #525252;
+    padding: 10px;
+    display: block;
+}
+
+.note span{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    margin-block: 5px;
+}
+
+/*########################################*/
+/* detail.html */
+
+.head{
+    display: flex;
+    background-color: #525252;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.authors{
+    flex: 20%;
+}
+
+.content{
+    flex: 80%;
+}
+
+.body{
+    display: flex;
+    background-color: #525252;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.body .authors .username{
+    font-size: 20px;
+}
+
+.body .authors .img{
+    max-width: 50px;
+    max-height: 80px;
+}
+
+body .content {
+    position: relative;
+}
+
+.body .content .comment button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    float: right;
+}
+
+/*comment*/
+
+.comment-area{
+    margin-top: 50px;
+}
+
+.comment-area textarea{
+    width: 100%;
+   min-height: 100px;
+   padding: 10px;
+   margin-block: 10px;
+}
+
+.comment-area input{
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.comment-area input:hover{
+    border: solid 1px #ca5757;
+}
+
+.comment{
+    margin-top: 50px;
+}
+
+.comments-container{
+    margin-top: 50px;
 }
