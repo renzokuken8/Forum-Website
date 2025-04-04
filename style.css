@@ -428,6 +428,8 @@ body.PostPage .container {
     background-color: #525252;
     padding: 10px;
     margin-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .body .authors .username{
@@ -435,8 +437,11 @@ body.PostPage .container {
 }
 
 .body .authors .img{
-    max-width: 50px;
-    max-height: 80px;
+    max-width: 500px;
+    height: auto; /* keep aspect ratio */
+    border-radius: 5px;
+    box-shadow: 0 0 20px 7px rgba(255, 201, 53, 0.6); /* AURA */
+    display: block;
 }
 
 body .content {
@@ -464,7 +469,7 @@ body .content {
 .comment-area textarea{
     width: 100%;
    min-height: 100px;
-   padding: 10px;
+   padding: 50px;
    margin-block: 10px;
 }
 
